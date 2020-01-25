@@ -1,0 +1,10 @@
+<div #flipcard class="container">
+	<div class="container__sub">
+		<div class="container__sub__face container__sub__face--frontside">
+			<ng-content select="[frontside]"></ng-content>
+		</div>
+		<div class="container__sub__face container__sub__face--backside">
+			<ng-content select="[backside]"></ng-content>
+		</div>
+	</div>
+</div>

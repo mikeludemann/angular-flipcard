@@ -1,0 +1,34 @@
+.container {
+	border: 1px solid #CCC;
+	margin: 10px;
+	perspective: 600px;
+    overflow: hidden;
+}
+
+.container__sub {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transform-origin: center right;
+    transition: transform 0.5s;
+}
+
+.container__sub.flip__vertical {
+	transform: translateY(0%) rotateX(-180deg);
+}
+
+.container__sub.flip__horizontal {
+	transform: translateX(-100%) rotateY(180deg);
+}
+
+.container__sub__face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	backface-visibility: hidden;
+}
